@@ -13,6 +13,6 @@ Accordingly, the first and foremost component of a successful and sustainable en
 
 With a mandate  to  facilitate  student  innovations  in  the  University, the Institute Innovation Council(IIC) ,Jadavpur University is in the process of identifying some prospective innovators who  would  be  exposed  to  the  Entrepreneurship  and  Startup  eco-system  in  India  and  abroad.
 
-<img src="https://github.com/jadavpur-university-ed-cell/IICJadavpurUniversity/blob/master/assets/img/logo/ecelljulogo.png" width="50" height="50"></img>Website developed and maintained by Jadavpur University Entrepreneurship Cell.
+Website developed and maintained by <img src="https://github.com/jadavpur-university-ed-cell/IICJadavpurUniversity/blob/master/assets/img/logo/ecelljulogo.png" width="50" height="50"></img> Jadavpur University Entrepreneurship Cell.
 
 
