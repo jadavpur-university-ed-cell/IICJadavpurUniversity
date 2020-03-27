@@ -1,6 +1,9 @@
 # Institue Innovation Council Jadavpur University
 
 
+<img src="https://github.com/jadavpur-university-ed-cell/IICJadavpurUniversity/blob/master/assets/img/logo/julogo.png" width="200" height="200"></img>
+
+
 Entrepreneurship is not just starting a business, but it also involves the challenge of resolving a problem, making a positive difference in the life of the people. To become a successful entrepreneur,one mustbe innovative and ensuresustainability againstmarket changes. 
 Accordingly, the first and foremost component of a successful and sustainable entrepreneurship effort is an idea that needs to be incubated into a successful venture.
 
