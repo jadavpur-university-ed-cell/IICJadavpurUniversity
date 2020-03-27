@@ -1,7 +1,10 @@
 # Institue Innovation Council Jadavpur University
 
 
+<div>
 <img src="https://github.com/jadavpur-university-ed-cell/IICJadavpurUniversity/blob/master/assets/img/logo/julogo.png" width="200" height="200"></img>
+<img src="https://github.com/jadavpur-university-ed-cell/IICJadavpurUniversity/blob/master/assets/img/logo/iic_logo_converted.jpg" width="200" height="200"></img>
+</div>
 
 
 Entrepreneurship is not just starting a business, but it also involves the challenge of resolving a problem, making a positive difference in the life of the people. To become a successful entrepreneur,one mustbe innovative and ensuresustainability againstmarket changes. 
