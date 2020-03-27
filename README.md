@@ -1,7 +1,7 @@
 # Institue Innovation Council Jadavpur University
 
 
-<div>
+<div style="text-align:center">
 <img src="https://github.com/jadavpur-university-ed-cell/IICJadavpurUniversity/blob/master/assets/img/logo/julogo.png" width="200" height="200"></img>
 <img src="https://github.com/jadavpur-university-ed-cell/IICJadavpurUniversity/blob/master/assets/img/logo/iic_logo_converted.jpg" width="200" height="200"></img>
 </div>
