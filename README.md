@@ -18,6 +18,7 @@ Website developed and maintained by <a href="https://www.juecell.in/"><img src="
 <a href="https://github.com/jadavpur-university-ed-cell/IICJadavpurUniversity/pulls">![GitHub pull requests](https://img.shields.io/github/issues-pr-raw/jadavpur-university-ed-cell/IICJadavpurUniversity?logo=git&logoColor=white)</a> 
 
 <a href="#">![GitHub contributors](https://img.shields.io/github/contributors/jadavpur-university-ed-cell/IICJadavpurUniversity?logo=github)</a>
+
 [![GitHub issues](https://img.shields.io/github/issues/jadavpur-university-ed-cell/IICJadavpurUniversity?logo=github)](https://github.com/jadavpur-university-ed-cell/IICJadavpurUniversity/issues) 
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat&logo=git&logoColor=white)](https://github.com/jadavpur-university-ed-cell) 
 [![GitHub last commit](https://img.shields.io/github/last-commit/jadavpur-university-ed-cell/IICJadavpurUniversity?logo=github)](https://github.com/jadavpur-university-ed-cell)
