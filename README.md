@@ -15,7 +15,11 @@ With a mandate  to  facilitate  student  innovations  in  the  University, the I
 
 Website developed and maintained by <a href="https://www.juecell.in/"><img src="https://github.com/jadavpur-university-ed-cell/IICJadavpurUniversity/blob/master/assets/img/logo/ecelljulogo.png" width="50" height="50"></img></a> Jadavpur University Entrepreneurship Cell.
 
-![GitHub pull requests](https://img.shields.io/github/issues-pr-raw/jadavpur-university-ed-cell/IICJadavpurUniversity?logo=git&logoColor=white) ![GitHub contributors](https://img.shields.io/github/contributors/jadavpur-university-ed-cell/IICJadavpurUniversity?logo=github)
-[![GitHub issues](https://img.shields.io/github/issues/jadavpur-university-ed-cell/IICJadavpurUniversity?logo=github)](https://github.com/jadavpur-university-ed-cell/IICJadavpurUniversity/issues) [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat&logo=git&logoColor=white)](https://github.com/jadavpur-university-ed-cell) [![GitHub last commit](https://img.shields.io/github/last-commit/jadavpur-university-ed-cell/IICJadavpurUniversity?logo=github)](https://github.com/jadavpur-university-ed-cell)
+<a href="https://github.com/jadavpur-university-ed-cell/IICJadavpurUniversity/pulls">![GitHub pull requests](https://img.shields.io/github/issues-pr-raw/jadavpur-university-ed-cell/IICJadavpurUniversity?logo=git&logoColor=white)</a> 
+
+<a href="#">![GitHub contributors](https://img.shields.io/github/contributors/jadavpur-university-ed-cell/IICJadavpurUniversity?logo=github)</a>
+[![GitHub issues](https://img.shields.io/github/issues/jadavpur-university-ed-cell/IICJadavpurUniversity?logo=github)](https://github.com/jadavpur-university-ed-cell/IICJadavpurUniversity/issues) 
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat&logo=git&logoColor=white)](https://github.com/jadavpur-university-ed-cell) 
+[![GitHub last commit](https://img.shields.io/github/last-commit/jadavpur-university-ed-cell/IICJadavpurUniversity?logo=github)](https://github.com/jadavpur-university-ed-cell)
 
 
