@@ -5,7 +5,7 @@
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0" />
   <title>IIC Jadavpur University</title>
-  <!-- <link rel="icon" href="./assets/img/logo/iic_logo_converted.jpg" type="image/icon type"> -->
+  <link rel="icon" href="./assets/img/logo/iic_logo_converted.jpg" type="image/icon type">
   <!-- CSS  -->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -31,25 +31,28 @@
   </nav>
 
   
-    <div class="carousel carousel-slider center">
+    <div class="carousel carousel-slider center" data-indicators="true">
       
       <div class="carousel-fixed-item center offset-s6">
-        <img src="./assets/img/logo/iic_logo_transparent.png" style="width: 20%;height: auto; opacity: 1;">
-        <!--<h2 class="black-text">Institute Innovation Council</h2>--> 
-        <!--<a class="btn-large waves-effect waves-light orange">Discover</a>--> 
+        <img src="./assets/img/logo/iic_logo_transparent.png" style="width: 25%;height: auto; opacity: 1;">
+        <!--<div class="show-on-medium-and-up">
+        <h3 class="black-text center-align">Institute Innovation Council</h3>
+        </div>-->
+        <!--<a class="btn-large waves-effect waves-light orange">Discover</a>-->
       </div> 
   
       <div class="carousel-item white-text" href="#one!">
-       <img src="./assets/img/image/jucampus.jpg" style="max-height: 620px; opacity: 0.8;">
+       <img src="./assets/img/image/jucampus_imgcon.jpg" style="max-height: 620px; opacity: 1;">
       </div>
       <div class="carousel-item white-text" href="#one!">
-       <img src="./assets/img/image/img1.jpg" style="max-height: 620px; opacity: 0.8;">
+       <img src="./assets/img/image/imgonline-com-slju.jpg" style="max-height: 620px; opacity: 1;">
       </div>
       <div class="carousel-item white-text" href="#one!">
-       <img src="./assets/img/image/libju_con.jpg" style="max-height: 620px; opacity: 0.8;">
+       <img src="./assets/img/image/imgonline-com-ua-libju.jpg" style="max-height: 620px; opacity: 2;">
       </div>
     
     </div>
+    
 
   
       
@@ -279,6 +282,21 @@
 
   <!--  Scripts-->
   <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script>
+   $(document).ready(function(){
+    $('.carousel.carousel-slider').carousel({
+      fullWidth: true,
+      indicators: true
+    });
+    autoplay();
+    function autoplay(){
+      $('.carousel').carousel('next');
+      setTimeout(autoplay,3500);
+    }
+   });
+
+  </script>
   <script src="./assets/js/materialize.js"></script>
   <script src="./assets/js/init.js"></script>
   <script src="./assets/js/component.js"></script>
