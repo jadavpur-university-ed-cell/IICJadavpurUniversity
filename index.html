@@ -11,12 +11,14 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link href="./assets/css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection" />
   <link href="./assets/css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
-
+  <script type="text/javascript" src="./assets/js/preloader.js"></script>
 </head>
 
 <body>
+  <div id="loader"></div>
+  <div id="content">
   <nav class="light-blue lighten-1" role="navigation">
-    <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo">JU IIC</a>
+    <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo">IIC</a>
       <ul class="right hide-on-med-and-down">
         <li><a href="#">Home</a></li>
         <li><a href="#">About</a></li>
@@ -33,6 +35,7 @@
   
     <div class="carousel carousel-slider center" data-indicators="true" id="carousel_div">
       
+      
       <div class="carousel-fixed-item center offset-s6">
         <img src="./assets/img/logo/iic_logo_transparent.png" style="width: 25%;height: auto; opacity: 1;">
         <!--<div class="show-on-medium-and-up">
@@ -42,14 +45,15 @@
       </div> 
   
       <div class="carousel-item white-text" href="#one!">
+        <img src="./assets/img/image/resize_libjucon_el.jpg" style="max-height: 620px; opacity: 1;">
+       </div>
+      <div class="carousel-item white-text" href="#one!">
        <img src="./assets/img/image/jucampus_imgcon.jpg" style="max-height: 620px; opacity: 1;">
       </div>
       <div class="carousel-item white-text" href="#one!">
-       <img src="./assets/img/image/imgonline-com-slju.jpg" style="max-height: 620px; opacity: 1;">
+        <img src="./assets/img/image/imgonline-com-slju.jpg" style="max-height: 620px; opacity: 1;">
       </div>
-      <div class="carousel-item white-text" href="#one!">
-       <img src="./assets/img/image/resize_libjucon_el.jpg" style="max-height: 620px; opacity: 1;">
-      </div>
+      
     
     </div>
     
@@ -304,7 +308,7 @@
   <script src="./assets/js/materialize.js"></script>
   <script src="./assets/js/init.js"></script>
   <script src="./assets/js/component.js"></script>
-
+</div>
 </body>
 
 </html>

@@ -13,3 +13,11 @@
 	font-size: inherit;
 }
 
+#loader {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  z-index: 1;
+  overflow: visible;
+  background: #fff url('../img/image/gif/iic_logo_pre.gif') no-repeat center center;
+}
