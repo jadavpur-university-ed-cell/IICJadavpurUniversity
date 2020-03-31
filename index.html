@@ -31,7 +31,7 @@
   </nav>
 
   
-    <div class="carousel carousel-slider center" data-indicators="true">
+    <div class="carousel carousel-slider center" data-indicators="true" id="carousel_div">
       
       <div class="carousel-fixed-item center offset-s6">
         <img src="./assets/img/logo/iic_logo_transparent.png" style="width: 25%;height: auto; opacity: 1;">
@@ -48,7 +48,7 @@
        <img src="./assets/img/image/imgonline-com-slju.jpg" style="max-height: 620px; opacity: 1;">
       </div>
       <div class="carousel-item white-text" href="#one!">
-       <img src="./assets/img/image/imgonline-com-ua-libju.jpg" style="max-height: 620px; opacity: 2;">
+       <img src="./assets/img/image/resize_libjucon_el.jpg" style="max-height: 620px; opacity: 1;">
       </div>
     
     </div>
@@ -284,8 +284,9 @@
   <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
   <script>
-   $(document).ready(function(){
-    $('.carousel.carousel-slider').carousel({
+       $( window ).on( "load", function() {
+        console.log( "window loaded" );
+        $('.carousel.carousel-slider').carousel({
       fullWidth: true,
       indicators: true
     });
@@ -294,8 +295,11 @@
       $('.carousel').carousel('next');
       setTimeout(autoplay,3500);
     }
-   });
 
+    });
+   
+   
+   
   </script>
   <script src="./assets/js/materialize.js"></script>
   <script src="./assets/js/init.js"></script>
