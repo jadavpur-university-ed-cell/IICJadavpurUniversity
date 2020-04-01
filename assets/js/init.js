@@ -5,6 +5,7 @@ $(document).ready(function () {
     fullWidth: true,
     indicators: true
   });
+  $('.tabs').tabs();
 });
 //Autoplay of carsoul initialization
 $(window).on("load", function () {
@@ -21,3 +22,4 @@ $(window).on("load", function () {
 
 });
 //Carsoul script ends
+
