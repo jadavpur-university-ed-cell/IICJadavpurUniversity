@@ -6,3 +6,18 @@ $(document).ready(function () {
     indicators: true
   });
 });
+//Autoplay of carsoul initialization
+$(window).on("load", function () {
+  console.log("window loaded");
+  $('.carousel.carousel-slider').carousel({
+    fullWidth: true,
+    indicators: true
+  });
+  autoplay();
+  function autoplay() {
+    $('.carousel').carousel('next');
+    setTimeout(autoplay, 3500);
+  }
+
+});
+//Carsoul script ends
