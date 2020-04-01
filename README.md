@@ -1,4 +1,4 @@
-# Institute Innovation Council Jadavpur University
+# Institution's Innovation Council Jadavpur University
 
 
 
