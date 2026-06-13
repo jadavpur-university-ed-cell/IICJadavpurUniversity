@@ -3,7 +3,7 @@
 
 
 <p align="center">
-<a href="http://www.jaduniv.edu.in/"><img src="https://github.com/jadavpur-university-ed-cell/IICJadavpurUniversity/blob/master/assets/img/logo/julogo.png" width="200" height="200"></img></a>
+<a href="http://www.jadavpuruniversity.in/"><img src="https://github.com/jadavpur-university-ed-cell/IICJadavpurUniversity/blob/master/assets/img/logo/julogo.png" width="200" height="200"></img></a>
 <img src="https://github.com/jadavpur-university-ed-cell/IICJadavpurUniversity/blob/master/assets/img/logo/iic_logo_converted.jpg" width="200" height="200"></img></p>
 
 
@@ -13,7 +13,7 @@ Accordingly, the first and foremost component of a successful and sustainable en
 
 With a mandate  to  facilitate  student  innovations  in  the  University, the Institute Innovation Council(IIC) ,Jadavpur University is in the process of identifying some prospective innovators who  would  be  exposed  to  the  Entrepreneurship  and  Startup  eco-system  in  India  and  abroad.
 
-Website developed and maintained by <a href="https://www.juecell.in/"><img src="https://github.com/jadavpur-university-ed-cell/IICJadavpurUniversity/blob/master/assets/img/logo/ecelljulogo.png" width="50" height="50"></img></a> Jadavpur University Entrepreneurship Cell.
+Website developed and maintained by <a href="https://www.juecell.com/"><img src="https://github.com/jadavpur-university-ed-cell/IICJadavpurUniversity/blob/master/assets/img/logo/ecelljulogo.png" width="50" height="50"></img></a> Jadavpur University Entrepreneurship Cell.
 
 <a href="https://github.com/jadavpur-university-ed-cell/IICJadavpurUniversity/pulls">![GitHub pull requests](https://img.shields.io/github/issues-pr-raw/jadavpur-university-ed-cell/IICJadavpurUniversity?logo=git&logoColor=white)</a> 
 <a href="#">![GitHub contributors](https://img.shields.io/github/contributors/jadavpur-university-ed-cell/IICJadavpurUniversity?logo=github)</a>

@@ -23,8 +23,9 @@ export default function Navigation() {
       <div className="w-full max-w-content mx-auto px-6 flex items-center justify-between">
         <Link to="/" className="flex items-center gap-2 select-none">
           <img className='w-10' src="/assets/iic_logo.png" alt="IIC Logo" />
-          <span className="text-xl font-bold text-pure-white tracking-tight">INSTITUTION'S INNOVATION COUNCIL</span>
-        </Link>
+          <span className="hidden xl:block text-xl font-bold text-pure-white tracking-tight">
+            INSTITUTION'S INNOVATION COUNCIL
+          </span>        </Link>
 
         {/* Center Nav Links */}
         <div className="hidden md:flex items-center gap-8">
@@ -34,6 +35,9 @@ export default function Navigation() {
           <Link to="/iic" className="text-sm font-medium text-white/60 hover:text-pure-white transition-colors duration-200">
             IIC
           </Link>
+          <a href="https://juinnovationstartup.jdvu.ac.in/CAST.htm" className="text-sm font-medium text-white/60 hover:text-pure-white transition-colors duration-200">
+            CAST
+          </a>
           <Link to="/ecell" className="text-sm font-medium text-white/60 hover:text-pure-white transition-colors duration-200">
             E-Cell
           </Link>

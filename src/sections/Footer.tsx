@@ -92,6 +92,27 @@ export default function Footer() {
               </a>
             ))}
           </div> */}
+          <div className="flex items-center gap-4">
+            <a
+              href={`https://translate.google.com/translate?sl=auto&tl=hi&u=${encodeURIComponent(window.location.href)}`}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-sm text-white/30 hover:text-white/60 transition-colors duration-200"
+            >
+              हिन्दी
+            </a>
+
+            <span className="text-white/20">|</span>
+
+            <a
+              href={`https://translate.google.com/translate?sl=auto&tl=bn&u=${encodeURIComponent(window.location.href)}`}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-sm text-white/30 hover:text-white/60 transition-colors duration-200"
+            >
+              বাংলা
+            </a>
+          </div>
 
           {/* Social Icons */}
           <div className="flex items-center gap-4">
