@@ -1,19 +1,9 @@
 import { useEffect, useRef } from 'react';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import { MapPin, Phone, Mail, User } from 'lucide-react';
 
 gsap.registerPlugin(ScrollTrigger);
-
-const partners = [
-  { name: 'athenahealth', logo: 'athenahealth' },
-  { name: 'NexGen', logo: 'NexGen' },
-  { name: 'ModMed', logo: 'ModMed' },
-  { name: 'Epic', logo: 'Epic' },
-  { name: 'Nextech', logo: 'Nextech' },
-  { name: 'Veradigm', logo: 'Veradigm' },
-  { name: 'eClinicalWorks', logo: 'eClinicalWorks' },
-  { name: 'SYSTEMEDX', logo: 'SYSTEMEDX' },
-];
 
 export default function IntegrationsSection() {
   const sectionRef = useRef<HTMLElement>(null);
@@ -44,35 +34,79 @@ export default function IntegrationsSection() {
   }, []);
 
   return (
-    <section ref={sectionRef} className="w-full bg-off-white py-section">
+    <section ref={sectionRef} id="contact" className="w-full bg-black py-section" data-section="contact">
       <div className="max-w-content mx-auto px-6">
         {/* Header */}
         <div className="text-center mb-16 section-animate">
           <p
-            className="text-xs font-medium tracking-[0.08em] uppercase mb-6"
-            style={{ color: 'rgba(0, 0, 0, 0.4)' }}
+            className="text-xs font-medium tracking-[0.08em] uppercase mb-6 text-soft-lime"
           >
-            NATIVE INTEGRATIONS
+            GET IN TOUCH
           </p>
-          <h2 className="text-section text-midnight">
-            Built to <span className="text-electric-blue">Connect</span>
+          <h2 className="text-section text-soft-lime">
+            Visit &amp; Contact Us
           </h2>
         </div>
 
-        {/* Integration Grid */}
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
-          {partners.map((partner) => (
-            <div
-              key={partner.name}
-              className="section-animate bg-pure-white border border-border-light rounded-xl p-8 h-[120px] flex flex-col items-center justify-center gap-3 cursor-pointer transition-all duration-200 hover:border-electric-blue group"
-            >
-              <span
-                className="text-lg font-medium text-midnight opacity-70 grayscale transition-all duration-200 group-hover:opacity-100 group-hover:grayscale-0"
-              >
-                {partner.name}
-              </span>
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-stretch">
+          {/* Contact Information */}
+          <div className="section-animate bg-zinc-900 border border-white/10 rounded-2xl p-8 md:p-12 shadow-card flex flex-col justify-center">
+            <h3 className="text-2xl font-bold text-pure-white mb-8">INNOVATION AND STARTUP</h3>
+
+            <div className="space-y-6">
+              <div className="flex items-start gap-4">
+                <User className="w-6 h-6 text-soft-lime shrink-0 mt-1" />
+                <div>
+                  <h4 className="font-semibold text-soft-lime text-lg">Shri Samayan Mazumder</h4>
+                  <p className="text-white/60">Project Fellow cum Coordinator IIC, JU</p>
+                </div>
+              </div>
+
+              <div className="flex items-start gap-4">
+                <MapPin className="w-6 h-6 text-soft-lime shrink-0 mt-1" />
+                <div>
+                  <h4 className="font-semibold text-pure-white text-lg">Address</h4>
+                  <p className="text-white/60">
+                    Technology Bhawan 7th floor (Main Campus)<br />
+                    Jadavpur University, Kolkata-700032
+                  </p>
+                </div>
+              </div>
+
+              <div className="flex items-start gap-4">
+                <Phone className="w-6 h-6 text-soft-lime shrink-0 mt-1" />
+                <div>
+                  <h4 className="font-semibold text-pure-white text-lg">Mobile</h4>
+                  <p className="text-white/60">8902561456 || 8697449219</p>
+                </div>
+              </div>
+
+              <div className="flex items-start gap-4">
+                <Mail className="w-6 h-6 text-soft-lime shrink-0 mt-1" />
+                <div>
+                  <h4 className="font-semibold text-pure-white text-lg">Email</h4>
+                  <ul className="text-white/60 space-y-1">
+                    <li>IIC: <a href="mailto:iicju@jadavpuruniversity.in" className="text-soft-lime transition-colors hover:font-bold">iicju@jadavpuruniversity.in</a></li>
+                    <li>ECell: <a href="mailto:ecell@jadavpuruniversity.in" className="text-soft-lime transition-colors hover:font-bold">ecell@jadavpuruniversity.in</a></li>
+                    <li>CAST: <a href="mailto:cast.ju@jadavpuruniversity.in" className="text-soft-lime transition-colors hover:font-bold">cast.ju@jadavpuruniversity.in</a></li>
+                    <li>IPR: <a href="mailto:iprcellju@jadavpuruniversity.in" className="text-soft-lime transition-colors hover:font-bold">iprcellju@jadavpuruniversity.in</a></li>
+                  </ul>
+                </div>
+              </div>
             </div>
-          ))}
+          </div>
+
+          {/* Map Embed */}
+          <div className="section-animate w-full h-[400px] lg:h-auto min-h-[400px] rounded-2xl overflow-hidden border border-border-light shadow-card relative">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d230.38500959058598!2d88.37071621710048!3d22.498173592802853!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1781380931850!5m2!1sen!2sin"
+              className="absolute inset-0 w-full h-full border-0"
+              allowFullScreen={true}
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+              title="Jadavpur University Map"
+            />
+          </div>
         </div>
       </div>
     </section>

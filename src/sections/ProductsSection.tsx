@@ -84,14 +84,14 @@ export default function ProductsSection() {
               className="section-animate bg-pure-white rounded-2xl p-8 md:p-10 flex flex-col justify-between min-h-[300px] border border-border-light transition-all duration-300 hover:-translate-y-1 hover:shadow-card-hover"
             >
               <div>
-                <span className="font-mono text-xs text-electric-blue mb-4 block">
+                <span className="font-mono text-xs text-black mb-4 block">
                   {cell.number}
                 </span>
                 <h3 className="text-subsection text-midnight mb-4">{cell.name}</h3>
                 <p className="text-midnight/60">{cell.description}</p>
               </div>
               <div className="mt-8">
-                <Link to={cell.path} className="text-sm font-medium text-electric-blue hover:text-blue-700 transition-colors">
+                <Link to={cell.path} className="text-sm font-medium text-soft-lime hover:text-lime-800 transition-colors">
                   Learn More &rarr;
                 </Link>
               </div>

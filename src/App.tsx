@@ -10,6 +10,7 @@ import Ipr from './pages/Ipr';
 import Tinkering from './pages/Tinkering';
 import Startup from './pages/Startup';
 import Clubs from './pages/Clubs';
+import StartupGenerated from './pages/StartupGenerated';
 
 function App() {
   useLenis();
@@ -26,6 +27,7 @@ function App() {
         <Route path="/startup" element={<Startup />} />
         <Route path="/events" element={<Events />} />
         <Route path="/clubs" element={<Clubs />} />
+        <Route path="/startup-generated" element={<StartupGenerated />} />
         <Route path="*" element={<Home />} />
       </Routes>
       <Footer />

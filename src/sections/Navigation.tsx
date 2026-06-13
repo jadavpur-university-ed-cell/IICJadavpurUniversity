@@ -14,17 +14,16 @@ export default function Navigation() {
 
   return (
     <nav
-      className={`fixed top-0 left-0 right-0 z-50 h-16 flex items-center transition-all duration-300 ${
-        scrolled
-          ? 'bg-midnight/90 backdrop-blur-xl'
-          : 'bg-transparent'
-      }`}
+      className={`fixed top-0 left-0 right-0 z-50 h-16 flex items-center transition-all duration-300 ${scrolled
+        ? 'bg-midnight/90 backdrop-blur-xl'
+        : 'bg-transparent'
+        }`}
       style={{ borderBottom: scrolled ? '1px solid rgba(255,255,255,0.1)' : '1px solid transparent' }}
     >
       <div className="w-full max-w-content mx-auto px-6 flex items-center justify-between">
-        {/* Logo */}
         <Link to="/" className="flex items-center gap-2 select-none">
-          <span className="text-xl font-bold text-pure-white tracking-tight">JU INNOVATION</span>
+          <img className='w-10' src="/assets/iic_logo.png" alt="IIC Logo" />
+          <span className="text-xl font-bold text-pure-white tracking-tight">INSTITUTION'S INNOVATION COUNCIL</span>
         </Link>
 
         {/* Center Nav Links */}
@@ -38,7 +37,7 @@ export default function Navigation() {
           <Link to="/ecell" className="text-sm font-medium text-white/60 hover:text-pure-white transition-colors duration-200">
             E-Cell
           </Link>
-          
+
           {/* Ecosystem Dropdown */}
           <div className="relative group">
             <button className="text-sm font-medium text-white/60 hover:text-pure-white transition-colors duration-200 flex items-center gap-1 cursor-default py-2">
@@ -71,12 +70,12 @@ export default function Navigation() {
 
         {/* Right CTAs */}
         <div className="flex items-center gap-4">
-          <Link
-            to="/contact"
+          <a
+            href="/#contact"
             className="text-sm font-medium text-white/60 hover:text-pure-white transition-colors duration-200"
           >
             Contact
-          </Link>
+          </a>
           <a
             href="mailto:iicju@jadavpuruniversity.in"
             className="text-sm font-medium bg-soft-lime text-midnight px-5 py-2 rounded-full hover:brightness-110 transition-all duration-200"

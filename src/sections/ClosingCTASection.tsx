@@ -50,45 +50,41 @@ export default function ClosingCTASection() {
       ScrollTrigger.getAll().forEach((t) => t.kill());
     };
   }, []);
-
   return (
     <section
       ref={sectionRef}
-      className="w-full relative overflow-hidden flex items-center justify-center"
-      style={{ height: '600px', background: '#F5F5F0' }}
+      className="w-full relative py-20 bg-pure-white"
     >
-      {/* Dot Grid Canvas */}
-      <canvas
-        ref={canvasRef}
-        className="absolute inset-0 w-full h-full"
-        role="img"
-        aria-label="Animated organic dot grid background"
-        style={{ display: 'block' }}
-      />
+      <p className="text-xs font-medium text-center tracking-[0.08em] mb-6" style={{ color: 'rgba(0, 0, 0, 0.4)' }}>
+        GALLERIA
+      </p>
+      <div className="max-w-7xl mx-auto px-6">
+        <div className="text-center mb-16 section-animate">
+          <h2 className="text-hero font-lg text-midnight mb-6">
+            Glimpses of <span className="text-soft-lime">Innovation</span>
+          </h2>
+          <p className="text-lg text-midnight/60 max-w-2xl mx-auto">
+            A visual journey through our events, activities, and milestones.
+          </p>
+        </div>
 
-      {/* Content */}
-      <div className="relative z-10 text-center px-6 max-w-[600px]">
-        <h2 className="section-animate text-midnight mb-6" style={{ fontSize: 'clamp(36px, 5vw, 64px)', fontWeight: 300, lineHeight: 1.05, letterSpacing: '-0.03em' }}>
-          Skip the Hold Music.{' '}
-          <span className="text-electric-blue">Forever.</span>
-        </h2>
-        <p className="section-animate text-lg leading-relaxed mb-8 mx-auto max-w-[520px]" style={{ color: 'rgba(0, 0, 0, 0.6)' }}>
-          See how specialty practices are cutting costs and delighting patients
-          with AI-powered voice agents.
-        </p>
-        <div className="section-animate flex flex-wrap items-center justify-center gap-4">
-          <a
-            href="#call"
-            className="px-10 py-4 rounded-full text-base font-medium bg-midnight text-pure-white hover:bg-electric-blue transition-all duration-200"
-          >
-            Get a call
-          </a>
-          <a
-            href="#demo"
-            className="px-10 py-4 rounded-full text-base font-medium text-midnight border border-midnight hover:bg-midnight hover:text-pure-white transition-all duration-200"
-          >
-            Book a Demo
-          </a>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-6">
+          {Array.from({ length: 25 }, (_, i) => `/assets/${i + 1}.jpg`).map((src, idx) => (
+            <div
+              key={idx}
+              className="section-animate relative aspect-square rounded-xl overflow-hidden group shadow-md"
+            >
+              <img
+                src={src}
+                alt={`Gallery image ${idx + 1}`}
+                className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                loading="lazy"
+              />
+              <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-3">
+                <span className="text-white text-sm font-medium">Image {idx + 1}</span>
+              </div>
+            </div>
+          ))}
         </div>
       </div>
     </section>

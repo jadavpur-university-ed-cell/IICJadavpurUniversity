@@ -30,7 +30,7 @@ export default function DynamicDividerSection() {
   }, []);
 
   return (
-    <section className="w-full relative overflow-hidden" style={{ height: '200px' }}>
+    <section className="w-full relative overflow-hidden" style={{ height: '250px' }}>
       <canvas
         ref={canvasRef}
         className="absolute inset-0 w-full h-full"

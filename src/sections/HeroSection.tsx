@@ -1,37 +1,4 @@
-import { useEffect, useRef, useState } from 'react';
-import { WaveformEngine } from '../effects/WaveformEngine';
-
 export default function HeroSection() {
-  const canvasRef = useRef<HTMLCanvasElement>(null);
-  const engineRef = useRef<WaveformEngine | null>(null);
-  const [waitTime, setWaitTime] = useState('00:00');
-
-  useEffect(() => {
-    if (!canvasRef.current) return;
-    const engine = new WaveformEngine(canvasRef.current);
-    engine.resize();
-    engine.start();
-    engineRef.current = engine;
-
-    const handleResize = () => engine.resize();
-    window.addEventListener('resize', handleResize);
-
-    return () => {
-      window.removeEventListener('resize', handleResize);
-      engine.destroy();
-    };
-  }, []);
-
-  // Wait time ticker
-  useEffect(() => {
-    let seconds = 0;
-    const interval = setInterval(() => {
-      seconds = (seconds + 1) % 3;
-      setWaitTime(`00:0${seconds}`);
-    }, 1000);
-    return () => clearInterval(interval);
-  }, []);
-
   return (
     <section
       id="hero"
@@ -46,7 +13,7 @@ export default function HeroSection() {
         <div className="max-w-[540px]">
           {/* Label */}
           <p className="font-mono text-xs tracking-widest mb-6 uppercase" style={{ color: 'rgba(200, 229, 88, 0.8)' }}>
-            Jadavpur University
+            Jadavpur University-IIC MoE ID: IC201811636  AISHE Code: U-0575
           </p>
 
           {/* Headline */}
@@ -78,105 +45,25 @@ export default function HeroSection() {
         </div>
       </div>
 
-      {/* Right Column - Product Demo Card */}
+      {/* Right Column - Embedded Video */}
       <div className="flex items-center justify-center px-6 py-12 lg:py-0 order-1 lg:order-2">
         <div
-          className="w-full max-w-[420px] rounded-2xl overflow-hidden flex flex-col"
+          className="w-full max-w-[560px] aspect-video rounded-2xl overflow-hidden shadow-2xl relative z-10"
           style={{
-            background: '#1A1A1A',
             border: '1px solid rgba(255, 255, 255, 0.1)',
-            height: '520px',
+            boxShadow: '0 25px 50px -12px rgba(0, 0, 0, 0.5)'
           }}
         >
-          {/* Status Bar */}
-          <div
-            className="h-12 flex items-center justify-between px-5"
-            style={{ borderBottom: '1px solid rgba(255, 255, 255, 0.1)' }}
-          >
-            <div className="flex items-center gap-2">
-              <span className="w-2.5 h-2.5 rounded-full bg-green-500 animate-pulse-dot inline-block" />
-              <span className="font-mono text-xs" style={{ color: 'rgba(255, 255, 255, 0.6)' }}>
-                Live AI Agent
-              </span>
-            </div>
-            <button
-              className="text-xs font-medium px-4 py-1 rounded-md"
-              style={{
-                background: 'rgba(255, 255, 255, 0.06)',
-                border: '1px solid rgba(255, 255, 255, 0.1)',
-                color: 'rgba(255, 255, 255, 0.6)',
-              }}
-            >
-              Call
-            </button>
-          </div>
-
-          {/* Audio Visualizer */}
-          <div className="flex-1 relative" style={{ minHeight: '200px' }}>
-            <canvas
-              ref={canvasRef}
-              className="absolute inset-0 w-full h-full"
-              aria-hidden="true"
-              style={{ display: 'block' }}
-            />
-          </div>
-
-          {/* Info Panel */}
-          <div className="p-6 flex flex-col gap-4">
-            {/* Glass Card */}
-            <div
-              className="rounded-xl p-4"
-              style={{
-                background: 'rgba(42, 42, 46, 0.6)',
-                backdropFilter: 'blur(20px)',
-                border: '1px solid rgba(255, 255, 255, 0.08)',
-              }}
-            >
-              <div className="flex items-center gap-2 mb-2">
-                <span className="text-base font-medium text-pure-white">JU Ecosystem</span>
-                <span
-                  className="text-xs font-medium px-2 py-0.5 rounded"
-                  style={{
-                    background: 'rgba(0, 85, 255, 0.2)',
-                    color: '#4488FF',
-                  }}
-                >
-                  Active
-                </span>
-              </div>
-              <p className="text-sm" style={{ color: 'rgba(255, 255, 255, 0.6)' }}>
-                Idea → Research → Startup → Impact
-              </p>
-            </div>
-
-            {/* Data Chips */}
-            <div className="flex gap-2">
-              <div
-                className="flex-1 rounded-lg p-3 text-center"
-                style={{
-                  background: 'rgba(255, 255, 255, 0.04)',
-                  border: '1px solid rgba(255, 255, 255, 0.08)',
-                }}
-              >
-                <p className="font-mono text-xs mb-1" style={{ color: 'rgba(255, 255, 255, 0.4)' }}>
-                  Active Time
-                </p>
-                <p className="font-mono text-lg text-pure-white">{waitTime}</p>
-              </div>
-              <div
-                className="flex-1 rounded-lg p-3 text-center"
-                style={{
-                  background: 'rgba(255, 255, 255, 0.04)',
-                  border: '1px solid rgba(255, 255, 255, 0.08)',
-                }}
-              >
-                <p className="font-mono text-xs mb-1" style={{ color: 'rgba(255, 255, 255, 0.4)' }}>
-                  Startups
-                </p>
-                <p className="font-mono text-lg text-pure-white">50+</p>
-              </div>
-            </div>
-          </div>
+          <iframe
+            width="100%"
+            height="100%"
+            src="https://www.youtube.com/embed/7njckqhKJwI"
+            title="YouTube video player"
+            frameBorder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerPolicy="strict-origin-when-cross-origin"
+            allowFullScreen
+          ></iframe>
         </div>
       </div>
     </section>

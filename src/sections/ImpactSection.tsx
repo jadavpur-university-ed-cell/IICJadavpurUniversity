@@ -43,6 +43,7 @@ export default function ImpactSection() {
       ref={sectionRef}
       id="about"
       className="w-full bg-off-white py-section"
+      data-section="about"
     >
       <div className="max-w-content mx-auto px-6">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
@@ -80,11 +81,10 @@ export default function ImpactSection() {
               {stats.map((stat, index) => (
                 <div
                   key={stat.label}
-                  className={`flex-1 min-w-[140px] py-4 ${
-                    index < stats.length - 1 ? 'lg:border-r lg:border-border-light' : ''
-                  } ${index > 0 ? 'lg:pl-8' : ''}`}
+                  className={`flex-1 min-w-[140px] py-4 ${index < stats.length - 1 ? 'lg:border-r lg:border-border-light' : ''
+                    } ${index > 0 ? 'lg:pl-8' : ''}`}
                 >
-                  <p className="text-5xl font-light text-electric-blue mb-2">{stat.value}</p>
+                  <p className="text-5xl font-bold text-soft-lime mb-2">{stat.value}</p>
                   <p className="text-sm" style={{ color: 'rgba(0, 0, 0, 0.5)' }}>
                     {stat.label}
                   </p>
@@ -92,35 +92,16 @@ export default function ImpactSection() {
               ))}
             </div>
           </div>
-
           {/* Right Column - Image */}
-          <div className="section-animate relative">
-            <div className="relative rounded-xl overflow-hidden aspect-[4/5]">
-              <img
-                src="/assets/impact-clinician.jpg"
-                alt="Healthcare professional in modern clinic"
-                className="w-full h-full object-cover"
-              />
-            </div>
-
-            {/* Testimonial Card */}
-            <div
-              className="absolute bottom-6 right-6 max-w-[280px] rounded-xl p-5"
-              style={{
-                background: 'rgba(255, 255, 255, 0.85)',
-                backdropFilter: 'blur(16px)',
-                border: '1px solid rgba(255, 255, 255, 0.5)',
-              }}
-            >
-              <p className="text-base text-midnight italic mb-3 leading-relaxed">
-                &ldquo;A seamless pathway from idea generation to societal impact.&rdquo;
-              </p>
-              <p className="text-sm font-medium" style={{ color: 'rgba(0, 0, 0, 0.5)' }}>
-                JU Innovation
-              </p>
-            </div>
+          <div className="relative rounded-xl overflow-hidden aspect-[3/4]">
+            <img
+              src="/assets/jucampus.jpg"
+              alt="JU Innovation Banner"
+              className="w-full h-full object-cover"
+            />
           </div>
         </div>
+        <img src="/assets/header.jpg" alt="JU Banner" className="w-full h-full object-cover rounded-xl" />
       </div>
     </section>
   );
